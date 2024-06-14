@@ -44,7 +44,7 @@ def backup_files(config):
             print(f"Le chemin '{path}' n'existe pas.")
 
 def main():
-    config_file = 'c:/Users/eliot/Documents/Cours/B3/Python/PythonCours/Ws5/'
+    config_file = 'c:/Users/eliot/Documents/Cours/B3/Python/PythonCours/Ws5/config.json'
     config = load_config(config_file)
     backup_files(config)
 
