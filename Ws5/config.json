@@ -1,0 +1,14 @@
+{
+  "backup_items": [
+    {
+      "path": "C:/Test/test.txt"
+    },
+    {
+      "path": "C:/Test/Dossier",
+      "recursive": true
+    },
+    {
+      "path": "C:/Test/Image.png"
+    }
+  ]
+}

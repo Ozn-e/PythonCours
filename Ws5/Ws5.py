@@ -25,16 +25,16 @@ def backup_files(config):
         path = item.get('path', '')
         if os.path.exists(path):
             if os.path.isfile(path):
-                # C'est un fichier, copier vers le dossier de sauvegarde
+                # un fichier, copier vers le dossier de sauvegarde
                 try:
-                    shutil.copy(path, '/chemin/vers/le/dossier/de/sauvegarde')
+                    shutil.copy(path, 'C:\\Log')
                     print(f"Fichier '{path}' sauvegardé avec succès.")
                 except IOError as e:
                     print(f"Erreur lors de la sauvegarde du fichier '{path}': {e}")
             elif os.path.isdir(path):
-                # C'est un répertoire, copier récursivement vers le dossier de sauvegarde
+                # répertoire, copier récursivement vers le dossier de sauvegarde
                 try:
-                    shutil.copytree(path, '/chemin/vers/le/dossier/de/sauvegarde')
+                    shutil.copytree(path, 'C:\\Log')
                     print(f"Répertoire '{path}' sauvegardé avec succès.")
                 except IOError as e:
                     print(f"Erreur lors de la sauvegarde du répertoire '{path}': {e}")
@@ -44,7 +44,7 @@ def backup_files(config):
             print(f"Le chemin '{path}' n'existe pas.")
 
 def main():
-    config_file = 'config.json'
+    config_file = 'c:/Users/eliot/Documents/Cours/B3/Python/PythonCours/Ws5/'
     config = load_config(config_file)
     backup_files(config)
 
