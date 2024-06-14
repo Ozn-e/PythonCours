@@ -18,5 +18,4 @@ def afficher_barres(frequences):
 texte = input("Entrez un texte : ").lower()
 
 frequences_lettres = calculer_frequences(texte)
-
 afficher_barres(frequences_lettres)
